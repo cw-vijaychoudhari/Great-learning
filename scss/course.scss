@@ -51,3 +51,47 @@
     }
 
 }
+@media screen and (min-width: 1024px) {
+    .course {
+        max-width: 996px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &__desc {
+        }
+
+        &__content-wrapper {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &__image-wrapper {
+            order: 2;
+            img {
+                height: 250px
+            }
+        }
+
+        &__list-wrapper {
+            order:1
+        }
+
+        &__list-item {
+
+            &:last-child {
+            }
+
+            &::after {
+
+            }
+        }
+
+        &__image-wrapper {
+        }
+
+        &__image {
+        }
+
+    }
+
+}

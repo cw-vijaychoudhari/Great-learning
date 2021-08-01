@@ -72,3 +72,31 @@
         }
     }
 }
+@media screen and (min-width: 1024px) {
+    .curriculum {
+
+        &__accordion-wrapper {
+            max-width: 996px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__accordion-item {
+
+            .curriculum__accordion-content {
+            }
+        }
+
+        &__accordion-tab {
+
+            p {
+            }
+        }
+
+        &__accordion-content {
+            p {
+            }
+        }
+    }
+
+}

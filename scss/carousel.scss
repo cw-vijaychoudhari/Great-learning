@@ -12,7 +12,6 @@
 
     &__item-wrapper {
         margin: 0;
-        width: 2700px;
         display: flex;
         align-items: center;
         transform: translateX(0px);
@@ -23,8 +22,17 @@
     }
 
     &__item {
-        width: 900px;
         box-sizing: border-box;
+
+        p {
+            font-weight: 700;
+
+            &:first-child {
+                margin-bottom: 15px;
+                font-weight: normal;
+            }
+
+        }
     }
 
     &__button--prev,
@@ -54,4 +62,73 @@
             }
         }
     }
+}
+@media screen and (min-width: 1024px) {
+    .testimonial {
+        max-width: 996px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .carousel {
+        position: relative;
+
+        &__item-wrapper--scroller {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            overflow-x: hidden;
+        }
+
+        &__item-wrapper {
+        }
+
+        &__item {
+            p {
+                text-align: right;
+                font-weight: 700;
+
+                &:first-child {
+                    text-align: left;
+                    margin-bottom: 15px;
+                    font-weight: normal;
+                    line-height: 34px;
+                }
+
+            }
+            span {
+                font-size: 84px;
+                line-height: 0px;
+                vertical-align: bottom;
+            }
+        }
+        &__actions {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+        }
+        &__button--prev,
+        &__button--next {
+            display: block;
+            position: absolute;
+            top:-25px;
+            left: 0;
+            height: 50px;
+            width: 50px;
+            border-left: 2px solid #979797;
+            border-bottom: 2px solid #979797;
+            transform: rotate(45deg);
+        }
+        &__button--next {
+            transform: rotate(225deg);
+            left: unset;
+            right: 0;
+        }
+
+        &__pagination {
+            display: none;
+        }
+    }
+
 }

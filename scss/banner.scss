@@ -142,6 +142,11 @@
 }
 @media screen and (min-width: 1024px) {
     .banner {
+        &__header {
+            img {
+                height: 64px;
+            }
+        }
 
         &__content-wrapper {
             max-width: 996px;
@@ -160,6 +165,24 @@
             width:32%;
             order:2;
         }
+        &__form{
+            &__title{
+                font-size: 24px;
+                margin-bottom: 16px;
+            }
+            &__seperater{
+                margin-bottom: 20px;
+            }
+            &__input {
+                margin-bottom: 20px;
+                position: relative;
+
+                input,
+                select {
+                    padding: 12px;
+                }
+            }
+        }
 
         &__description {
 
@@ -174,11 +197,13 @@
 
             &__duration {
                 padding-right: 5px;
+                font-size: 19px;
             }
 
             &__method {
                 display: inline-block;
                 padding-left: 5px;
+                font-size: 19px;
                 border-left: 2px solid #fff;
             }
         }

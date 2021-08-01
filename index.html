@@ -14,7 +14,7 @@
   <body>
     <section class="banner">
       <div class="banner__header">
-        <img src="images/logo.png" />
+        <img src="images/logo.png" alt="logo" />
       </div>
       <div class="banner__content-wrapper">
         <div class="banner__description">
@@ -94,16 +94,16 @@
       </div>
       <div class="aboutus__features-wrapper">
         <div class="aboutus__features">
-          <img />
+          <img src="images/curriculum.png" alt="Comprehensive Curriculum" />
           <p class="aboutus__features__desc">Comprehensive Curriculum</p>
         </div>
         <div class="aboutus__features">
-          <img />
-          <p class="aboutus__features__desc">Comprehensive Curriculum</p>
+          <img src="images/mentor.png" alt="Persionalize Mentorship" />
+          <p class="aboutus__features__desc">Persionalize Mentorship</p>
         </div>
         <div class="aboutus__features">
-          <img />
-          <p class="aboutus__features__desc">Comprehensive Curriculum</p>
+          <img src="images/growth.png" alt="Dedicated career Assistant" />
+          <p class="aboutus__features__desc">Dedicated career Assistant</p>
         </div>
       </div>
     </section>
@@ -184,7 +184,11 @@
       </p>
       <div class="course__content-wrapper">
         <div class="course__image-wrapper">
-          <img class="course__image" src="images/laptop.png" />
+          <img
+            class="course__image"
+            alt="laptop image"
+            src="images/laptop.png"
+          />
         </div>
         <ul class="course__list-wrapper">
           <li class="course__list-item">
@@ -216,30 +220,33 @@
           <div class="carousel__item-wrapper animation">
             <div class="carousel__item">
               <p>
-                "I have already used this on one project at work, and my boss
-                has already asked me to make a similar prototype for another
-                project. I also feel like if I ever were to try starting my own
-                company that my chances of success just went up a lot."
+                <span>&#8220;</span>I have already used this on one project at
+                work, and my boss has already asked me to make a similar
+                prototype for another project. I also feel like if I ever were
+                to try starting my own company that my chances of success just
+                went up a lot.<span>&#8221;</span>
               </p>
               <p>Senior Director, Business Development</p>
               <p>(Software Industry)</p>
             </div>
             <div class="carousel__item">
               <p>
-                "I have already used this on one project at work, and my boss
-                has already asked me to make a similar prototype for another
-                project. I also feel like if I ever were to try starting my own
-                company that my chances of success just went up a lot."
+                <span>&#8220;</span>I have already used this on one project at
+                work, and my boss has already asked me to make a similar
+                prototype for another project. I also feel like if I ever were
+                to try starting my own company that my chances of success just
+                went up a lot.<span>&#8221;</span>
               </p>
               <p>Senior Director, Business Development</p>
               <p>(Software Industry)</p>
             </div>
             <div class="carousel__item">
               <p>
-                "I have already used this on one project at work, and my boss
-                has already asked me to make a similar prototype for another
-                project. I also feel like if I ever were to try starting my own
-                company that my chances of success just went up a lot."
+                <span>&#8220;</span>I have already used this on one project at
+                work, and my boss has already asked me to make a similar
+                prototype for another project. I also feel like if I ever were
+                to try starting my own company that my chances of success just
+                went up a lot.<span>&#8221;</span>
               </p>
               <p>Senior Director, Business Development</p>
               <p>(Software Industry)</p>
@@ -247,19 +254,29 @@
           </div>
         </div>
         <div class="carousel__actions">
-          <button class="carousel__button--prev" aria-label="Previous slide">
-            <
-          </button>
-          <button class="carousel__button--next" aria-label="Next slide">
-            >
-          </button>
+          <div class="carousel__button--prev" aria-label="Previous slide"></div>
+          <div class="carousel__button--next" aria-label="Next slide"></div>
         </div>
         <div class="carousel__pagination"></div>
       </div>
+    </section>
+    <section class="history">
+      <p class="history__description">
+        Great Learning is an Ed-Tech company that offers programs in career
+        critical competencies such as Analytics, Data Science, Artificial
+        Intelligence, Cloud Computing, Cybersecurity, Full Stack Development and
+        much more. Over 10000 professionals have taken Great Learning programs
+        and it has already delivered over 5 million hours of learning.
+      </p>
+    </section>
+    <section class="footer js-sticky-footer">
+      <p class="footer__description">Explore this game changing opportunity</p>
+      <p class="footer__button">Apply now</p>
     </section>
 
     <script src="js/carousal.js"></script>
     <script src="js/form.js"></script>
     <script src="js/accordian.js"></script>
+    <script src="js/footerscroll.js"></script>
   </body>
 </html>

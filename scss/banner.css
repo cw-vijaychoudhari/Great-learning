@@ -145,6 +145,9 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .banner__header img {
+    height: 64px;
+  }
   .banner__content-wrapper {
     max-width: 996px;
     margin-left: auto;
@@ -169,6 +172,21 @@
         -ms-flex-order: 2;
             order: 2;
   }
+  .banner__form__title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  .banner__form__seperater {
+    margin-bottom: 20px;
+  }
+  .banner__form__input {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .banner__form__input input,
+  .banner__form__input select {
+    padding: 12px;
+  }
   .banner__description__heading {
     font-size: 32px;
   }
@@ -178,10 +196,12 @@
   }
   .banner__description__duration {
     padding-right: 5px;
+    font-size: 19px;
   }
   .banner__description__method {
     display: inline-block;
     padding-left: 5px;
+    font-size: 19px;
     border-left: 2px solid #fff;
   }
 }
