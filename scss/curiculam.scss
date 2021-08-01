@@ -1,0 +1,74 @@
+//curriculum
+.curriculum {
+    padding: 40px 15px;
+    background-color: #ecf4ff;
+
+    &__accordion-wrapper {}
+
+    &__accordion-item {
+        background: white;
+        color: #1b1c1d;
+        border: 1px solid #979797;
+        border-bottom: 0;
+        display: block;
+        position: relative;
+
+        &:after,
+        &:before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            width: 14px;
+            right: 15px;
+            height: 2px;
+            border-radius: 2px;
+            background-color: #1b1c1d;
+            position: absolute;
+        }
+
+        &:before {
+            transform: rotate(90deg);
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:last-child {
+            border-bottom: 1px solid #979797;
+        }
+
+        .curriculum__accordion-content {
+            height: auto;
+            max-height: 0px;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &.active {
+            &::before {
+                transform: rotate(0deg);
+            }
+
+            .curriculum__accordion-content {
+                max-height: 1000px;
+            }
+        }
+    }
+
+    &__accordion-tab {
+        display: flex;
+        padding: 20px 15px;
+        justify-content: space-between;
+
+        p {
+            font-size: 17px;
+        }
+    }
+
+    &__accordion-content {
+        p {
+            padding: 20px 15px;
+            background-color: #ecf4ff;
+            border-top: 1px solid #979797;
+            font-size: 15px;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.curriculum {
+  padding: 40px 15px;
+  background-color: #ecf4ff;
+}
+
+.curriculum__accordion-item {
+  background: white;
+  color: #1b1c1d;
+  border: 1px solid #979797;
+  border-bottom: 0;
+  display: block;
+  position: relative;
+}
+
+.curriculum__accordion-item:after, .curriculum__accordion-item:before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  width: 14px;
+  right: 15px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #1b1c1d;
+  position: absolute;
+}
+
+.curriculum__accordion-item:before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.curriculum__accordion-item:last-child {
+  border-bottom: 1px solid #979797;
+}
+
+.curriculum__accordion-item .curriculum__accordion-content {
+  height: auto;
+  max-height: 0px;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.curriculum__accordion-item.active::before {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.curriculum__accordion-item.active .curriculum__accordion-content {
+  max-height: 1000px;
+}
+
+.curriculum__accordion-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.curriculum__accordion-tab p {
+  font-size: 17px;
+}
+
+.curriculum__accordion-content p {
+  padding: 20px 15px;
+  background-color: #ecf4ff;
+  border-top: 1px solid #979797;
+  font-size: 15px;
+}
+/*# sourceMappingURL=curiculam.css.map */

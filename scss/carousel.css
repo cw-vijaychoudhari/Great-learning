@@ -1,0 +1,72 @@
+.testimonial {
+  padding: 40px 15px;
+}
+
+.carousel {
+  width: 100%;
+}
+
+.carousel__item-wrapper--scroller {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.carousel__item-wrapper {
+  margin: 0;
+  width: 2700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.carousel__item-wrapper.animation {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.carousel__item {
+  width: 900px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.carousel__button--prev, .carousel__button--next {
+  display: none;
+}
+
+.carousel__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+
+.carousel__pagination div {
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  margin-left: 15px;
+  background-color: #c7c7c7;
+}
+
+.carousel__pagination div.active {
+  background-color: #4386de;
+}
+
+.carousel__pagination div:first-child {
+  margin-left: 0px;
+}
+/*# sourceMappingURL=carousel.css.map */

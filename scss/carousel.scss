@@ -1,0 +1,57 @@
+.testimonial {
+    padding: 40px 15px;
+}
+
+.carousel {
+    width: 100%;
+
+    &__item-wrapper--scroller {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    &__item-wrapper {
+        margin: 0;
+        width: 2700px;
+        display: flex;
+        align-items: center;
+        transform: translateX(0px);
+
+        &.animation {
+            transition: transform 0.5s;
+        }
+    }
+
+    &__item {
+        width: 900px;
+        box-sizing: border-box;
+    }
+
+    &__button--prev,
+    &__button--next {
+        display: none;
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+
+        div {
+            border-radius: 50%;
+            height: 12px;
+            width: 12px;
+            margin-left: 15px;
+            background-color: #c7c7c7;
+
+            &.active {
+                background-color: #4386de;
+            }
+
+            &:first-child {
+                margin-left: 0px
+            }
+        }
+    }
+}
